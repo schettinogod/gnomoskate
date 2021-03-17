@@ -1,0 +1,123 @@
+fotoprofessores.png<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+</head>
+<style>
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+	right: 0;
+   
+}
+
+.conte {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 26px;
+}
+#myBtc{
+	
+    border: none;
+    background: #000;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+	color: #ddd;
+    cursor: pointer;
+}
+#myBtc:hover {
+    background: #fff;
+    color: white;
+}
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="MarsHelicopterTechnologyDemonstration_May2018_v002-1280.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="conte">
+  
+  <p>The Mars Helicopter is a technology demonstration Credits: NASA/JPL-Caltech</p>
+    <p>“O recorde de altitude de um helicóptero voando aqui na Terra é de cerca de 40.000 pés. A atmosfera de Marte é apenas um por cento da da Terra, então quando o nosso helicóptero está na superfície marciana, já está no equivalente a 100.000 pés de altitude ”, disse Mimi Aung, gerente de projeto da Mars Helicopter no JPL.<br> “Para fazê-lo voar com essa baixa densidade atmosférica, tivemos que examinar tudo, torná-lo o mais leve possível, sendo tão forte e tão poderoso quanto possível”.<br>
+
+Uma vez que o rover esteja na superfície do planeta, um local adequado será encontrado para desdobrar o helicóptero do veículo e colocá-lo no chão.<br>	 O rover será então afastado do helicóptero para uma distância segura da qual ele transmitirá comandos. Depois que suas baterias são carregadas e uma miríade de testes é realizada, os controladores na Terra comandarão o helicóptero Mars para fazer seu primeiro vôo autônomo na história.
+
+"Nós não temos um piloto e a Terra estará a vários minutos de distância, então não há como dar um joystick nessa missão em tempo real", disse Aung. "Em vez disso, temos uma capacidade autônoma que será capaz de receber e interpretar comandos do solo, e depois voar a missão por conta própria.".
+A campanha completa de testes de voo de 30 dias incluirá até cinco voos de distâncias de voo cada vez mais longas, até algumas centenas de metros, e durações mais longas, desde 90 segundos, durante um período. Em seu primeiro voo, o helicóptero fará uma breve subida vertical até 10 pés (3 metros), onde ficará por cerca de 30 segundos.
+
+Como demonstração tecnológica, o Mars Helicopter é considerado um projeto de alto risco e alto retorno. Se não funcionar, a missão de Marte 2020 não será afetada. Se funcionar, os helicópteros podem ter um futuro real como batedores de baixa altitude e veículos aéreos para acessar locais não acessíveis por viagens terrestres.
+
+"A capacidade de ver claramente o que está além da próxima colina é crucial para futuros exploradores", disse Zurbuchen. “Já temos ótimas visões de Marte tanto da superfície quanto da órbita. Com a dimensão adicional de uma visão panorâmica de um "helicóptero", só podemos imaginar o que futuras missões alcançarão. " O rover conduzirá avaliações geológicas de seu local de pouso em Marte, determinará a habitabilidade do ambiente, procurará sinais da vida marciana antiga e avaliará recursos naturais e riscos para futuros exploradores humanos. Os cientistas usarão os instrumentos a bordo para identificar e coletar amostras de rocha e solo, encaixá-las em tubos selados e deixá-las na superfície do planeta para um possível retorno à Terra em uma futura missão a Marte.O Programa de Serviços de Lançamento da NASA, baseado no Kennedy Space Center da agência na Flórida, é responsável pelo gerenciamento de lançamentos.
+<mark>For more information about NASA’s Mars missions, go to:
+
+<a href="https://www.nasa.gov/mars">Mars2020<a>
+
+</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button><button id="myBtc">RETIRA O ESCRITO</button>
+<button><a href="1.html">back</button></a>
+  </div>
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pausar";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
